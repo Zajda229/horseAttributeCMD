@@ -35,6 +35,8 @@ while(True):
 
         print(final,"\n")
         if(input("save? (y/n): ").lower()=="y"):
+            if(not savedStats):
+                savedStats = []
             savedStats = [spd, spdBlock, jmp, hrts]
     except(ValueError):
         print("\n!Wrong data!\n")
